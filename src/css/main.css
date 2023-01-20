@@ -4,11 +4,20 @@ body {
 
 .wrapper {
   height: 100vh;
-  background-image: url(../bag.jpg), url(../apple-tree1.jpg);
+  background-image: url(../apple-tree1.jpg);
   background-repeat: no-repeat;
-  background-position: 20% 95%, 50%;
-  background-size: 170px, auto, cover;
-  border: 1px solid red;
+  background-position: 50%;
+  background-size: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    height: 100vh;
+    background-image: url(../bag.jpg), url(../apple-tree1.jpg);
+    background-repeat: no-repeat;
+    background-position: 5% 95%, 50%;
+    background-size: auto auto;
+  }
 }
 
 .box {
@@ -28,10 +37,10 @@ body {
 
 .title {
   text-align: center;
-  /* font-style: italic; */
+  font-style: italic;
   font-weight: 700;
   font-size: 36px;
-  color: darkcyan;
+  color: rgb(22, 113, 113);
 }
 
 p {
